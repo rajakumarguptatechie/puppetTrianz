@@ -1,0 +1,3 @@
+package {'hkhdfkf':
+  ensure => present
+}
