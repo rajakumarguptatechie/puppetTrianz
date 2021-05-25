@@ -1,0 +1,66 @@
+Day 01:
+Configuration management
+Configuration management tools available in market (Chef/Ansible/SaltStack/Puppet)
+Puppet as configuration management tool
+Puppet Features 
+	Idempotency
+	Cross-Platform (using RAL)
+	Multinode parallet execution (MCollective)
+	Puppet DB
+	Puppet dashboard
+	Puppet IDE (Geppetto)
+Puppet architecture
+Puppet master configuration
+Puppet client configuration
+Puppet workflow or lifecycle of puppet execution
+	Certificate signing request and approval
+	Facts collection by agents and forwarding to master
+	Parsing all applicable manifests while considering facts and create catalog and pass to agent
+	Agent validate system state (desired/drift) and apply catalog accordingly
+	Once catalog run, it creates run report and pass to master
+	Master store run report in Puppet DB
+	Puppet dashboard connect to puppet DB to read run reports and show processed data on dashboard
+
+Day 02:
+Puppet terminology
+	Nodes
+	Facts
+	Manifests
+	Specs
+	Tests
+	Resources
+Puppet DSL synopsis
+	Variables (String, Integer, Boolean, Array, Hash)
+	If/Else conditions
+	Case statement
+	Iteration (loops)
+	Function
+	Relationship meta parameters (Before, Require, Notify and Subscribe)
+	Puppet code validation (Parser & Lint)
+	
+Day 03:
+Basic System configuration with puppet
+System configuration on the basis of puppet environment(prod/test/dev), roles, group, etc
+Manual linux tasks conversion into puppet code
+Shell script conversion into puppet code
+Application installation and configuration with puppet
+
+Day 04:
+Puppet module development
+	Static module development
+	Dynamic module development
+	Puppet Forge
+
+Day 05:
+Hiera
+	What is hiera
+	Hiera hierarchy
+	Use case of hiera
+	Overriding default values with hiera
+	Make puppet modules dynamic by passing variables' values through hiera
+Puppet templates
+	ERB templates
+	EPP templates
+	
+
+Puppet Reference: https://puppet.com/docs/puppet/6.22/puppet_index.html	
